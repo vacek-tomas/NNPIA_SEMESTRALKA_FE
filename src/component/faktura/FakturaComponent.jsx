@@ -107,7 +107,9 @@ class FakturaComponent extends Component{
         if(polozkyFaktury[index].mnozstvi !== undefined &&
             polozkyFaktury[index].cenaZaJednotku !== undefined &&
             polozkyFaktury[index].mnozstvi !== "" &&
-            polozkyFaktury[index].cenaZaJednotku !== ""){
+            polozkyFaktury[index].cenaZaJednotku !== ""&&
+            polozkyFaktury[index].mnozstvi !== null &&
+            polozkyFaktury[index].cenaZaJednotku !== null){
 
             polozkyFaktury[index].cenaCelkem = polozkyFaktury[index].cenaZaJednotku * polozkyFaktury[index].mnozstvi;
         }
